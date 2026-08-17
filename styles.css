@@ -871,7 +871,7 @@ button.fight-card{ cursor:pointer; }
 
 .stat-strip{
   display:grid;
-  grid-template-columns:repeat(5, 1fr);
+  grid-template-columns:repeat(auto-fit, minmax(140px, 1fr));
   gap:1px;
   background:var(--panel-line);
   margin:48px 0;
@@ -893,6 +893,37 @@ button.fight-card{ cursor:pointer; }
   text-transform:uppercase;
   color:var(--text-faint);
   margin-top:6px;
+}
+
+/* ---------- training background cards ---------- */
+.training-grid{
+  display:grid;
+  grid-template-columns:repeat(2, 1fr);
+  gap:20px;
+  margin-top:6px;
+}
+@media (max-width:600px){ .training-grid{ grid-template-columns:1fr; } }
+.training-card{
+  background:var(--panel);
+  border:1px solid var(--panel-line);
+  border-left:3px solid var(--spotlight);
+  border-radius:4px;
+  padding:22px 24px;
+}
+.training-card .gym-name{
+  font-family:var(--display);
+  font-weight:400;
+  text-transform:uppercase;
+  font-size:1.15rem;
+  color:var(--text);
+  display:block;
+  margin-bottom:6px;
+}
+.training-card .gym-location{
+  font-family:var(--eyebrow);
+  font-size:0.8rem;
+  letter-spacing:0.04em;
+  color:var(--spotlight);
 }
 
 .fighter-bio-block{ max-width:70ch; color:var(--text-dim); }
