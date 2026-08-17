@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Fighters — Fight Spotlight</title>
-<meta name="description" content="Browse the Fight Spotlight fighter roster.">
+<meta name="description" content="Browse the Fight Spotlight fighter roster — profiles, records, and career highlights.">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -12,8 +12,7 @@
 <header class="site-header">
   <div class="header-row">
     <a href="index.html" class="logo">
-      <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQXT2-_n7e-11h_O4WBXrcQ_8d5YXK8_jnC4i-dsGk5p95tw1WsF09aOJHIqXsGLqPQi0UbWRl7lO6gH633PeSHZO3RMSHHQOuJhN5rYyzpiZONYDpE2OzsiqSWqFF4lCohGzUczXnTzooWvpGqFxVNPhjOLd3_U8_nabYxA2rb1oaHUdmwWVGARsMW8=w200" alt="Fight Spotlight logo">
-      Fight <span class="lit">Spotlight</span>
+      <img src="images/fight-spotlight-logo.png" alt="Fight Spotlight logo" class="logo-mark">
     </a>
     <button class="nav-toggle" aria-label="Toggle menu">☰</button>
     <nav>
@@ -32,26 +31,142 @@
 <section class="page-hero wrap">
   <span class="eyebrow">Fight Spotlight</span>
   <h1>Fighters</h1>
-  <p>The roster — profiles, records, and tale-of-the-tape breakdowns for fighters we cover.</p>
+  <p>The roster — profiles, records, and career highlights for fighters we cover.</p>
 </section>
 
 <section class="roster-section wrap">
-  <div class="roster-grid">
+  <div class="fighters-grid">
 
-    <a href="fighter-brahim.html" class="roster-card">
-      <div class="roster-photo">
-        <img src="https://lh3.googleusercontent.com/sitesv/AG8ngQV1kud_a4PiUiuPIJ4lkA0KwNNZraQz3kNJI6DT6UFOSN4P6dVpGzDdzr8IA6FyAku3vUh5B95PsWp4auKF3pe9fmiGNb8EZ1O-GYvGBc6a-ziU_SEj7kdBXTdrZ3tWXGZqMJlWzR9lP8k7K84NoekM9Fu9pIlgwSRkJU8URxho4tFYRnHchuBbqmWmqKAUDC8CV247qJqx4N7hTxXaNwVv-OpuZa_dKZjl08S9=w1280" alt="Brahim Bydamen">
+    <!-- 1. BRAHIM BYDAMEN (existing profile — information and photo unchanged) -->
+    <div class="fighter-card">
+      <a href="fighter-brahim.html" class="fighter-card-photo">
+        <img src="images/brahim-kick.jpg" alt="Ibrahim Bydamen">
+        <div class="fighter-card-name">
+          <span class="nationality-tag">MMA Fighter &amp; Coach</span>
+          <h3>Ibrahim Bydamen</h3>
+        </div>
+      </a>
+      <div class="fighter-card-recordbar">
+        <span class="division">Mixed Martial Arts</span>
+        <span class="record">Active</span>
       </div>
-      <div class="roster-card-body">
-        <span class="division">Featured</span>
-        <h4>Brahim Bydamen</h4>
-        <div class="record">View profile →</div>
+      <div class="fighter-card-stats">
+        <div><span class="stat-label">Discipline</span><span class="stat-value">MMA</span></div>
+        <div><span class="stat-label">Pro Debut</span><span class="stat-value">2019</span></div>
+        <div><span class="stat-label">Titles</span><span class="stat-value">DE · UA</span></div>
       </div>
-    </a>
+      <div class="fighter-card-body">
+        <p class="fighter-card-bio">Ukrainian MMA Champion and German Champion — from a childhood dream in Morocco to titles across Ukraine and Germany.</p>
+        <div class="fighter-card-line">
+          <strong>Career Highlight</strong>
+          Ukrainian MMA Champion (2019) · Master of Sport of Ukraine (2019) · German Champion (2024)
+        </div>
+        <div class="fighter-card-cta">
+          <a href="fighter-brahim.html" class="btn ghost">View Profile</a>
+        </div>
+      </div>
+    </div>
 
-    <div class="roster-card placeholder">Add your next fighter profile here</div>
-    <div class="roster-card placeholder">Add your next fighter profile here</div>
-    <div class="roster-card placeholder">Add your next fighter profile here</div>
+    <!-- 2. EOIN SHERIDAN -->
+    <div class="fighter-card">
+      <a href="fighter-eoin-sheridan.html" class="fighter-card-photo">
+        <img src="images/eoin-sheridan-hero.jpg" alt="Eoin Sheridan">
+        <div class="fighter-card-name">
+          <span class="nationality-tag">Ireland</span>
+          <h3>Eoin Sheridan</h3>
+          <span class="nickname">"The Sheriff"</span>
+        </div>
+      </a>
+      <div class="fighter-card-recordbar">
+        <span class="division">Welterweight</span>
+        <span class="record">5-0-0</span>
+      </div>
+      <div class="fighter-card-stats">
+        <div><span class="stat-label">Weight Class</span><span class="stat-value">Welterweight</span></div>
+        <div><span class="stat-label">Height</span><span class="stat-value">6'5"</span></div>
+        <div><span class="stat-label">Reach</span><span class="stat-value">81"</span></div>
+        <div><span class="stat-label">Weight</span><span class="stat-value">170 lb</span></div>
+        <div><span class="stat-label">Team</span><span class="stat-value">SBG Ireland</span></div>
+      </div>
+      <div class="fighter-card-body">
+        <p class="fighter-card-bio">Undefeated Irish welterweight with a strong kickboxing background — ISKA Irish National Kickboxing Champion (2017) and a former sparring partner of Conor McGregor.</p>
+        <div class="fighter-card-line">
+          <strong>Recent Fight</strong>
+          Defeated Chris Mixan by unanimous decision — PFL Belfast, April 16, 2026
+        </div>
+        <div class="fighter-card-next">
+          <strong>Next Fight</strong>
+          <span>vs. James Vake — PFL Tampa, August 22, 2026</span>
+        </div>
+        <div class="fighter-card-cta">
+          <a href="fighter-eoin-sheridan.html" class="btn ghost">View Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3. GEMMA AULD -->
+    <div class="fighter-card">
+      <a href="fighter-gemma-auld.html" class="fighter-card-photo">
+        <img src="images/gemma-auld-flag.jpg" alt="Gemma Auld">
+        <div class="fighter-card-name">
+          <span class="nationality-tag">Scotland</span>
+          <h3>Gemma Auld</h3>
+        </div>
+      </a>
+      <div class="fighter-card-recordbar">
+        <span class="division">Women's Flyweight</span>
+        <span class="record">2-0-0</span>
+      </div>
+      <div class="fighter-card-stats">
+        <div><span class="stat-label">Weight Class</span><span class="stat-value">Flyweight</span></div>
+        <div><span class="stat-label">Height</span><span class="stat-value">5'5"</span></div>
+        <div><span class="stat-label">Reach</span><span class="stat-value">62"</span></div>
+        <div><span class="stat-label">Weight</span><span class="stat-value">125 lb</span></div>
+        <div><span class="stat-label">Team</span><span class="stat-value">Higher Level MA</span></div>
+      </div>
+      <div class="fighter-card-body">
+        <p class="fighter-card-bio">Scottish flyweight from Kilmarnock with a background in semi-professional rugby and eight years of Dutch kickboxing, entering the pros after a 6-0 amateur run.</p>
+        <div class="fighter-card-line">
+          <strong>Recent Fight</strong>
+          Defeated Sammy Jo Luxton by rear-naked choke, Round 2 — PFL Europe 1, May 10, 2025
+        </div>
+        <div class="fighter-card-cta">
+          <a href="fighter-gemma-auld.html" class="btn ghost">View Profile</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- 4. DELPHINE BENOUAICH -->
+    <div class="fighter-card">
+      <a href="fighter-delphine-benouaich.html" class="fighter-card-photo">
+        <img src="images/delphine-belt-1.jpg" alt="Delphine Benouaich">
+        <div class="fighter-card-name">
+          <span class="nationality-tag">France</span>
+          <h3>Delphine Benouaich</h3>
+          <span class="nickname">"Benphine"</span>
+        </div>
+      </a>
+      <div class="fighter-card-recordbar">
+        <span class="division">Strawweight</span>
+        <span class="record">7-2-0</span>
+      </div>
+      <div class="fighter-card-stats">
+        <div><span class="stat-label">Weight Class</span><span class="stat-value">Strawweight</span></div>
+        <div><span class="stat-label">Height</span><span class="stat-value">5'4"</span></div>
+        <div><span class="stat-label">Weight</span><span class="stat-value">115 lb</span></div>
+        <div><span class="stat-label">Team</span><span class="stat-value">Mahmoudi Gym</span></div>
+      </div>
+      <div class="fighter-card-body">
+        <p class="fighter-card-bio">French strawweight with a grappling foundation, a decorated amateur résumé, and a current run on The Ultimate Fighter 34, Team Cormier.</p>
+        <div class="fighter-card-line">
+          <strong>Recent Fight</strong>
+          Defeated Lindsey Payne by guillotine choke, Round 1 — ARES 36, December 13, 2025
+        </div>
+        <div class="fighter-card-cta">
+          <a href="fighter-delphine-benouaich.html" class="btn ghost">View Profile</a>
+        </div>
+      </div>
+    </div>
 
   </div>
 </section>
@@ -60,7 +175,7 @@
   <div class="wrap">
     <div class="footer-grid">
       <div>
-        <div class="footer-logo">Fight <span class="lit">Spotlight</span></div>
+        <img src="images/fight-spotlight-logo.png" alt="Fight Spotlight logo" class="footer-logo-mark">
         <p class="footer-tag">Combat sports news, fighters, and events — all in one place.</p>
       </div>
       <div class="footer-nav">
