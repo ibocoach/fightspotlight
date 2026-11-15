@@ -89,3 +89,36 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   }
 });
+
+// News category filters (news.html only)
+document.addEventListener('DOMContentLoaded', function () {
+  var chips = document.querySelectorAll('.filter-row .filter-chip[data-filter]');
+  var grid = document.querySelector('.news-list-grid');
+  if (!chips.length || !grid) return;
+  var cards = grid.querySelectorAll('.card[data-category]');
+  var empty = grid.querySelector('.filter-empty');
+
+  function applyFilter(filter, label) {
+    var shown = 0;
+    cards.forEach(function (card) {
+      var match = filter === 'all' || card.getAttribute('data-category') === filter;
+      card.hidden = !match;
+      if (match) shown++;
+    });
+    chips.forEach(function (chip) {
+      var active = chip.getAttribute('data-filter') === filter;
+      chip.classList.toggle('active', active);
+      chip.setAttribute('aria-pressed', active ? 'true' : 'false');
+    });
+    if (empty) {
+      empty.hidden = shown > 0;
+      empty.textContent = 'No ' + label + ' stories yet — check back soon.';
+    }
+  }
+
+  chips.forEach(function (chip) {
+    chip.addEventListener('click', function () {
+      applyFilter(chip.getAttribute('data-filter'), chip.textContent.trim());
+    });
+  });
+});
